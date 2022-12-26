@@ -1,3 +1,13 @@
 h1{
     color: purple;
 }
+button{
+    color: indigo;
+    background-color: brown;
+}
+p{
+    color: #ffff00;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
