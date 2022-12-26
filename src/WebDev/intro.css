@@ -2,16 +2,18 @@ h1{
     color: purple;
     text-align: center;
     font-weight: bolder;
-    text-decoration: underline;
+    text-decoration: plum underline wavy;
+    font-family: 'Segoe UI';
 }
 h2{
     color: darkgoldenrod;
     text-align: left;
 }
 p{
-    color: brown;
+    color: green;
     font-weight: lighter;
     text-align: left;
+    line-height: 2;
 }
 body{
     background-color: whitesmoke;
