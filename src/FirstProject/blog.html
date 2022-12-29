@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kick It On</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="sub-header">
+    <nav>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CATOGARIES</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Services</h1>
+    </section>
+
+    <!--blog-->
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="sneakers/sneaker services.jpg">
+                <h2>Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis hic, mollitia repellendus, ad eveniet veniam tempore, consectetur voluptates nesciunt in vel necessitatibus repudiandae! Non in magni tempore, accusamus quisquam minima.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex possimus molestiae accusamus iste ullam veritatis architecto facilis. Velit optio, dolor esse, amet nemo ratione praesentium at voluptatibus reiciendis maiores voluptates.</p><br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi dignissimos, laudantium sit nostrum necessitatibus eum, quae recusandae perspiciatis suscipit officia quaerat! Modi quas sit nostrum molestias libero aspernatur illo consequatur.</p>
+            </div>
+
+            <div class="blog-right">
+                <h3>Service Categories</h3>
+                <div>
+                    <span>Shoe Cleaning</span>
+                </div>
+                <div>
+                    <span>Shoe Cleaning</span>
+                </div>
+                <div>
+                    <span>Shoe Cleaning</span>
+                </div>
+                <div>
+                    <span>Shoe Cleaning</span>
+                </div>
+                <div>
+                    <span>Shoe Cleaning</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div class="container">
+        <span><a href="https://twitter.com/i_devduttrai"><i class="fab fa-twitter"></i></a></span>
+        <span><a href="https://www.instagram.com/ft.devduttrai/"><i class="fab fa-instagram"></i></a></span>
+        <span><a href="https://www.linkedin.com/in/devdutt-rai-223172200/"><i class="fab fa-linkedin"></i></a></span>
+        <span><a href="https://github.com/devduttrai"><i class="fab fa-github"></i></a></span>
+      </div>
+        <p>Made with <i class="fa fa-heart"></i> by Devdutt Rai</p>
+</section>
+
+
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+        navLinks.style.right="-200px"
+        }
+    </script>
+
+
+
+
+</body>
+</html>
