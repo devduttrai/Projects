@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <section class="header">
     <nav>
-        <div class="nav-links">
-            <i class="fa fa-times" onclick="hideMenu"></i>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="">ABOUT</a></li>
@@ -22,7 +25,7 @@
                 <li><a href="">CONTACT</a></li>
             </ul>
         </div>
-        <i class="fa fa-bars" onclick="hideMenu"></i>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
         <h1>Your Final Stop For Every Sneaker Need</h1>
@@ -31,5 +34,143 @@
             <a href="" class="hero-btn">Visit Us To Know More</a>
     </div>
     </section>
+
+
+
+<!--Categories-->
+<section class="category">
+    <h1>Variety Of Sneakers</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipising elit.</p>
+    <div  class="row">
+        <div class="cat-col">
+            <h3>Nike</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="cat-col">
+            <h3>New Balance</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="cat-col">
+            <h3>Adidas</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</section>
+
+<!--best sellers page-->
+<section class="best-sellers">
+    <h1>Our Best Sellers</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipising elit.</p>
+    <div  class="row">
+        <div class="best-sel">
+            <img src="sneakers/jordan.jpg">
+            <h3>Air Jordan 1 Retro High OG</h3>
+        </div>
+        <div class="best-sel">
+            <img src="sneakers/nb.jpg">
+            <h3>New Balance 525 Series Light Marathon</h3>
+        </div>
+        <div class="best-sel">
+            <img src="sneakers/nike.jpg">
+            <h3>Nike Air Max 1 Magma Orange</h3>
+        </div>
+    </div>
+</section>
+
+<!--Where we sell-->
+<section class="stores">
+    <h1>Where We Sell</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="storename">
+            <h2>Flipkart</h2>
+        </div>
+        
+        <div class="storename">
+            <h2>Myntra</h2>
+        </div>
+        
+        <div class="storename">
+            <h2>Amazon</h2>
+        </div>
+    </div>
+</section>
+
+<!--testimonials-->
+<section class="testimonials">
+    <h1>What Our Customers Say</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="testimonial-col">
+            <img src="sneakers/customer1.jpg">
+            <div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <h3>Alexa</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                
+            </div>
+        </div>
+        <div class="testimonial-col">
+            <img src="sneakers/customer3.jpg">
+            <div>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+                <h3>Mark</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Call to action-->
+<section class="cta">
+    <h1>So What Are You Waiting For?<br>
+    Buy Your Favorite Sneakers</h1>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!--Footer-->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    <div class="container">
+        <span><a href="https://twitter.com/i_devduttrai"><i class="fab fa-twitter"></i></a></span>
+        <span><a href="https://www.instagram.com/ft.devduttrai/"><i class="fab fa-instagram"></i></a></span>
+        <span><a href="https://www.linkedin.com/in/devdutt-rai-223172200/"><i class="fab fa-linkedin"></i></a></span>
+        <span><a href="https://github.com/devduttrai"><i class="fab fa-github"></i></a></span>
+      </div>
+        <p>Made with <i class="fa fa-heart"></i> by Devdutt Rai</p>
+</section>
+
+
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+        navLinks.style.right="-200px"
+        }
+    </script>
+
+
+
+
 </body>
 </html>
